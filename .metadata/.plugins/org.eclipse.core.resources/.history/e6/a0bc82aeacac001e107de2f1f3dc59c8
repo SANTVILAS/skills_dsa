@@ -1,0 +1,52 @@
+package sorting_user_defined_using_comparable_and_comprator_both;
+
+import java.util.TreeSet;
+
+class Student implements Comparable<Student>{
+	
+	String eid;
+	String ename;
+	String eaddr;
+	
+	Student(String eid,String ename,String eaddr){
+		this.eid=eid;
+		this.ename=ename;
+		this.eaddr=eaddr;
+	}
+	
+	public String toString() {
+		return "["+eid+","+ename+","+eaddr+"]";
+	}
+
+	@Override
+	public int compareTo(Student std) {
+		int val=this.ename.compareTo(std.ename);
+		return val;
+	}
+
+	
+	
+	
+}
+
+
+public class Test {
+  public static void main(String[] args) {
+		Student std1=new Student("S-111","AAA","Hyd");
+		Student std2=new Student("S-222","BBB","Hyd");
+		Student std3=new Student("S-333","CCC","Hyd");
+		Student std4=new Student("S-444","DDD","Hyd");
+		
+		TreeSet<Student> ts=new TreeSet<Student>();
+		ts.add(std1);
+		ts.add(std2);
+		ts.add(std3);
+		ts.add(std4);
+		
+		System.out.println(ts);
+		
+		
+		
+	}
+	
+}

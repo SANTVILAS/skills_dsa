@@ -1,0 +1,25 @@
+package Day2_switch;
+
+public class Test2 {
+	
+	public static void main(String[] args) {
+		byte b = 10;
+		switch (b) {
+		case 5:
+			System.out.println("Five");
+			break;
+		case 10:
+			System.out.println("Ten");
+			break;
+		case 15:
+			System.out.println("Fifteen");
+			break;
+		case 20:
+			System.out.println("Twenty");
+			break;
+		default:
+			System.out.println("Default");
+			break;
+		}
+	}
+}

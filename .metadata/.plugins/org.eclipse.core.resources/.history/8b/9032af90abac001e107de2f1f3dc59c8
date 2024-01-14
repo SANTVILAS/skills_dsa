@@ -1,0 +1,31 @@
+package sorting_user_defined_using_comparable_and_comprator_both;
+
+class Student{
+	
+	String eid;
+	String ename;
+	String eaddr;
+	
+	Student(String eid,String ename,String eaddr){
+		this.eid=eid;
+		this.ename=ename;
+		this.eaddr=eaddr;
+	}
+	
+	public String toString() {
+		return "["+eid+","+ename+","+eaddr+"]";
+	}
+	
+}
+
+
+public class Test {
+
+	
+	
+	public static void main(String[] args) {
+		
+		
+	}
+	
+}

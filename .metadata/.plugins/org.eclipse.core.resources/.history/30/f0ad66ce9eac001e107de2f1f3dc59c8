@@ -1,0 +1,17 @@
+package sorting_user_defined_nonComparable_object;
+
+import java.util.Comparator;
+
+class MyComparator implements Comparator<StringBuffer>
+
+
+public class Test {
+
+	
+	public static void main(String[] args) {
+		
+	}
+	
+
+
+}
